@@ -1,0 +1,182 @@
+html, body{ /*Apply scrolling to the entire page so that content fits screen*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+        /*creating space in between headers*/
+        h1{ 
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        h2{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        h3{ 
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        h4{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .content{
+            font-weight: bold;
+            min-height: 100vh;
+        }
+        /*Section container using flex*/
+.section { 
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+/*Content-section container using flex*/
+.content-section{ 
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+}/*content-section container used for images*/
+.content-section img{  
+    width: 300px;
+    height: 300px;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+/*create left and right img allignement*/
+.left-img{
+    order: 0;
+}
+.right-img{
+    order: 1;
+}
+/*flex container for column layout*/
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+/*Styling for family, sizing, margin and color*/
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+    margin: 20px;
+    color: black;
+}
+/*Navigation bar*/
+.sidenav{
+        height: 100%;
+        width: 145px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    .sidenav a{
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+    }
+    .sidenav a:hover{
+        color: #f1f1f1;
+    }
+    .main{
+        margin-left: 160px;
+        padding: 0px 10px;
+    }
+
+    /*footer*/
+footer{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background:rgb(0, 0, 0);
+    z-index: 1000;
+}
+
+/*quiz app*/
+
+/*create body styling for text font and size*/
+body{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #040404;
+    margin: 0;
+    padding: 20px;
+    color: #fffcfc;
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+    color: #fafafa;
+    font-size: 36px;
+}
+.app{
+max-width: 700px;
+margin: auto;
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+color: #000;
+}
+/*Create question styling*/
+#question{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+/* Create styling for answer buttons*/
+.btn{
+    display: block;
+    width: 100%;
+    margin: 6px 0;
+    padding: 10px;
+    border:none;
+    border-radius: 4px;
+    background: #007acc;
+    color: #fff;
+    cursor: pointer;
+}
+/*Styling effects for buttons. Will highlight buttons color based off correctness*/
+.btn:hover{background:#005fa3;}
+.btn.correct{background: #28a745;}
+.btn.incorrect{background:#dc3535;}
+.btn.selected{background:#ff1500;}
+/*styling for input question*/
+.input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+/*Create next button*/
+#next-btn{
+    display: none;
+    margin-top: 20px;
+}
+/*Display results*/
+#results{
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 6px;
+}
+/*Establish colors for correct answers and incorrect answers*/
+.passingresult{
+    color: green;
+    font-weight: bold;
+}
+.failingresult{
+    color: red;
+    font-weight: bold;
+}

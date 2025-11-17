@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Athletes Of the Modern Era: Quiz</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <style>
+            /*body styling for quiz*/
+            body{
+                height:100%;
+                margin: 0;
+                padding: 0;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                background-image:url("Deuces.jpg");
+                background-size:cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                min-height
+                : 100vh;
+            }
+            /*Allow for contrast between image and content*/
+            body:before{
+                content:"";
+                position: fixed;
+                top: 0; ; left: 0;
+                width: 100%; height: 100%;
+                background: rgba(0,0,0,0.4);
+                z-index: -1;
+            }
+        </style>
+        <div class="sidenav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dominating-the-game.html">Dominating the game</a></li>
+        <li><a href="athletes-training.html">Athlete's training</a></li>
+        <li><a href="key-concepts.html">Key concepts</a></li>
+        <li><a href= "References-and-resource.html">References and resources</a></li>
+        <li><a href= "aboutme.html">About me</a></li>
+        <li><a href= "sportsquiz.html">Pop Quiz</a></li>
+        <li><a href="https://ksuweb.github.io/IT3203/">KSU CLASS PROJECT</a></li>
+        </div>
+        </ul>
+        <form id="quizform"> 
+            <label>Q1: What is the minimum age where an athlete peaks physically? (men and women)</label>
+            <input type="text" id="q1"><br>
+            <p>Q2: What mindset type welcomes adversity and challenge to grow their skills?</p>
+            <input type="radio" name="q2" value="Growth Mindset"> Growth Mindset
+            <input type="radio" name="q2" value="Fixed Mindset"> Fixed Mindset
+            <input type="radio" name="q2" value="Creative Mindset"> Creative Mindset
+            <input type="radio" name="q2" value="Planning Mindset"> Planned Mindset<br>
+
+            <p>Q3:What kind of training prepares the body for day-to-day functions?</p>
+            <input type="radio" name="q3" value="Calisthenics">Calisthenics
+            <input type="radio" name="q3" value="Powerlifting">Powerlifting
+            <input type="radio" name="q3" value="Functional Strength Training"> Functional Strength Training
+            <input type="radio" name="q3" value="Endurance Running"> Endurance Training<br>
+
+            <p>Which of the following are the big three in Nutrition?</p>
+            <input type="Checkbox" name="q4" value="Carbohydrates">Carbohydrates
+            <input type="Checkbox" name="q4" value="Proteins">Proteins
+            <input type="Checkbox" name="q4" value="Sugars">Sugars
+            <input type="Checkbox" name="q4" value="Fats">Fats
+
+            <p> Q5: What mental technique helps athletes imagine their success before it happens?</p>
+            <input type="radio" name="q5" value="Visualization">Visualization
+            <input type="radio" name="q5" value="Meditation"> Meditation
+            <input type="radio" name="q5" value="Focus">Focus
+            <input type="radio" name="q5" value="Relaxation">Relaxation<br>
+
+    <button type="submit">Submit</button>
+    <button type="button" onclick="resetQuiz()">Reset</button>
+    </form>
+    <script src="index.js"></script>
+    <div id="results"></div>
+    </body>
+</html>
